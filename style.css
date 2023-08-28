@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/image/CDC\ wall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    animation: header 1s ease-in-out;
+}
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+
+header h1{
+    color: #0a0a0a;
+    margin: 10px 0 0 20px;
+    padding: 0;
+    animation: ease-in-out;
+}
+
+
+nav ul a{
+    list-style: none;
+    text-decoration: none;
+    color: #0a0a0a;
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
+
+header{
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.shortener-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+
+.shortened-link{
+    color: #fff;
+}
+
+.shortened-link a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+#original-link {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#shorten-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+#shorten-button:hover {
+    background-color: #fd9205;
+}
+
